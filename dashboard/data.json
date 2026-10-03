@@ -1,0 +1,552 @@
+{
+  "metrics": {
+    "total_events": 6708903,
+    "repositories": 1042029,
+    "human_contributors": 791301,
+    "push_events": 4770207,
+    "issue_events": 180880,
+    "pull_request_events": 705114,
+    "release_events": 46249,
+    "fork_events": 126433,
+    "analysis_start": "2023-02-08",
+    "analysis_end": "2023-02-09"
+  },
+  "daily_activity": [
+    {
+      "date": "2023-02-08",
+      "total_events": 3350647,
+      "unique_contributors": 515901,
+      "push_events": 2359096,
+      "issue_events": 88917,
+      "pull_request_events": 366090
+    },
+    {
+      "date": "2023-02-09",
+      "total_events": 3358256,
+      "unique_contributors": 511867,
+      "push_events": 2411111,
+      "issue_events": 91963,
+      "pull_request_events": 339024
+    }
+  ],
+  "top_repositories": [
+    {
+      "name": "Lombiq/Orchard",
+      "total_events": 51988,
+      "unique_contributors": 1,
+      "push_events": 51988,
+      "issue_events": 0,
+      "pull_request_events": 0,
+      "release_events": 0,
+      "fork_events": 0
+    },
+    {
+      "name": "unifyai/ivy",
+      "total_events": 29161,
+      "unique_contributors": 87,
+      "push_events": 28748,
+      "issue_events": 158,
+      "pull_request_events": 58,
+      "release_events": 0,
+      "fork_events": 20
+    },
+    {
+      "name": "happyfish2024/mins",
+      "total_events": 17232,
+      "unique_contributors": 1,
+      "push_events": 17232,
+      "issue_events": 0,
+      "pull_request_events": 0,
+      "release_events": 0,
+      "fork_events": 0
+    },
+    {
+      "name": "priyankjivani123/test",
+      "total_events": 14658,
+      "unique_contributors": 1,
+      "push_events": 14658,
+      "issue_events": 0,
+      "pull_request_events": 0,
+      "release_events": 0,
+      "fork_events": 0
+    },
+    {
+      "name": "WolseyBankWitness/rediffusion",
+      "total_events": 13521,
+      "unique_contributors": 4,
+      "push_events": 7190,
+      "issue_events": 0,
+      "pull_request_events": 6331,
+      "release_events": 0,
+      "fork_events": 0
+    },
+    {
+      "name": "B74LABgit/CAM",
+      "total_events": 12057,
+      "unique_contributors": 1,
+      "push_events": 12057,
+      "issue_events": 0,
+      "pull_request_events": 0,
+      "release_events": 0,
+      "fork_events": 0
+    },
+    {
+      "name": "actiflix/assets",
+      "total_events": 11965,
+      "unique_contributors": 1,
+      "push_events": 11965,
+      "issue_events": 0,
+      "pull_request_events": 0,
+      "release_events": 0,
+      "fork_events": 0
+    },
+    {
+      "name": "almahmoud/gha-build-linux-amd64",
+      "total_events": 10797,
+      "unique_contributors": 2,
+      "push_events": 10797,
+      "issue_events": 0,
+      "pull_request_events": 0,
+      "release_events": 0,
+      "fork_events": 0
+    },
+    {
+      "name": "mhutchinson/mhutchinson-distributor",
+      "total_events": 10481,
+      "unique_contributors": 4,
+      "push_events": 4145,
+      "issue_events": 0,
+      "pull_request_events": 6336,
+      "release_events": 0,
+      "fork_events": 0
+    },
+    {
+      "name": "splashingdiamonds/pacer-courts",
+      "total_events": 10020,
+      "unique_contributors": 1,
+      "push_events": 10020,
+      "issue_events": 0,
+      "pull_request_events": 0,
+      "release_events": 0,
+      "fork_events": 0
+    }
+  ],
+  "top_contributors": [
+    {
+      "contributor": "ivy-root",
+      "total_events": 28674,
+      "repositories_active": 1,
+      "push_events": 28674,
+      "pull_request_events": 0,
+      "issue_events": 0,
+      "issue_comments": 0,
+      "pr_reviews": 0
+    },
+    {
+      "contributor": "direwolf-github",
+      "total_events": 17412,
+      "repositories_active": 6289,
+      "push_events": 11658,
+      "pull_request_events": 5754,
+      "issue_events": 0,
+      "issue_comments": 0,
+      "pr_reviews": 0
+    },
+    {
+      "contributor": "happyfish2024",
+      "total_events": 17232,
+      "repositories_active": 1,
+      "push_events": 17232,
+      "pull_request_events": 0,
+      "issue_events": 0,
+      "issue_comments": 0,
+      "pr_reviews": 0
+    },
+    {
+      "contributor": "B74LABgit",
+      "total_events": 15977,
+      "repositories_active": 3,
+      "push_events": 15977,
+      "pull_request_events": 0,
+      "issue_events": 0,
+      "issue_comments": 0,
+      "pr_reviews": 0
+    },
+    {
+      "contributor": "priyankjivani123",
+      "total_events": 14658,
+      "repositories_active": 1,
+      "push_events": 14658,
+      "pull_request_events": 0,
+      "issue_events": 0,
+      "issue_comments": 0,
+      "pr_reviews": 0
+    },
+    {
+      "contributor": "actiflix",
+      "total_events": 11965,
+      "repositories_active": 1,
+      "push_events": 11965,
+      "pull_request_events": 0,
+      "issue_events": 0,
+      "issue_comments": 0,
+      "pr_reviews": 0
+    },
+    {
+      "contributor": "19920513",
+      "total_events": 11913,
+      "repositories_active": 3,
+      "push_events": 11913,
+      "pull_request_events": 0,
+      "issue_events": 0,
+      "issue_comments": 0,
+      "pr_reviews": 0
+    },
+    {
+      "contributor": "mhutchinson-witness",
+      "total_events": 10394,
+      "repositories_active": 4,
+      "push_events": 8164,
+      "pull_request_events": 2230,
+      "issue_events": 0,
+      "issue_comments": 0,
+      "pr_reviews": 0
+    },
+    {
+      "contributor": "WolseyBankWitness",
+      "total_events": 9680,
+      "repositories_active": 3,
+      "push_events": 7300,
+      "pull_request_events": 2380,
+      "issue_events": 0,
+      "issue_comments": 0,
+      "pr_reviews": 0
+    },
+    {
+      "contributor": "rmayr",
+      "total_events": 9574,
+      "repositories_active": 4,
+      "push_events": 7835,
+      "pull_request_events": 1739,
+      "issue_events": 0,
+      "issue_comments": 0,
+      "pr_reviews": 0
+    }
+  ],
+  "issues": [
+    {
+      "repository": "pddemo/demo",
+      "unique_issues": 2645,
+      "issues_opened": 2645,
+      "issues_closed": 0,
+      "unique_issue_authors": 1,
+      "avg_resolution_hours": null
+    },
+    {
+      "repository": "kengorton/testBasicAuth",
+      "unique_issues": 2359,
+      "issues_opened": 2359,
+      "issues_closed": 0,
+      "unique_issue_authors": 1,
+      "avg_resolution_hours": null
+    },
+    {
+      "repository": "google/pywrapcc",
+      "unique_issues": 1589,
+      "issues_opened": 1500,
+      "issues_closed": 1479,
+      "unique_issue_authors": 1,
+      "avg_resolution_hours": 0.0005955600631057
+    },
+    {
+      "repository": "Enterprise-CMCS/macpro-mdct-mcr",
+      "unique_issues": 1346,
+      "issues_opened": 1346,
+      "issues_closed": 0,
+      "unique_issue_authors": 1,
+      "avg_resolution_hours": null
+    },
+    {
+      "repository": "linkspreed/linkspreed_uptime",
+      "unique_issues": 643,
+      "issues_opened": 599,
+      "issues_closed": 515,
+      "unique_issue_authors": 1,
+      "avg_resolution_hours": 1.757468176914779
+    },
+    {
+      "repository": "VincentGoyal/Github-104",
+      "unique_issues": 496,
+      "issues_opened": 496,
+      "issues_closed": 0,
+      "unique_issue_authors": 1,
+      "avg_resolution_hours": null
+    },
+    {
+      "repository": "leo424y/heysiri.ml",
+      "unique_issues": 422,
+      "issues_opened": 422,
+      "issues_closed": 0,
+      "unique_issue_authors": 1,
+      "avg_resolution_hours": null
+    },
+    {
+      "repository": "ascheid/itsg33-pbmm-issue-gen",
+      "unique_issues": 406,
+      "issues_opened": 404,
+      "issues_closed": 50,
+      "unique_issue_authors": 1,
+      "avg_resolution_hours": 16.94714444444444
+    },
+    {
+      "repository": "Zombie-Action/monitor",
+      "unique_issues": 369,
+      "issues_opened": 347,
+      "issues_closed": 344,
+      "unique_issue_authors": 1,
+      "avg_resolution_hours": 0.6366303294573643
+    },
+    {
+      "repository": "TetraGG/Upptime",
+      "unique_issues": 295,
+      "issues_opened": 276,
+      "issues_closed": 277,
+      "unique_issue_authors": 1,
+      "avg_resolution_hours": 0.2323475732049739
+    }
+  ],
+  "pull_requests": [
+    {
+      "repository": "mhutchinson/mhutchinson-distributor",
+      "unique_prs": 3314,
+      "prs_opened": 3169,
+      "prs_closed": 3167,
+      "prs_merged": 3157,
+      "unique_pr_authors": 3,
+      "avg_cycle_time_hours": 0.018462851511632
+    },
+    {
+      "repository": "WolseyBankWitness/rediffusion",
+      "unique_prs": 3303,
+      "prs_opened": 3164,
+      "prs_closed": 3167,
+      "prs_merged": 3161,
+      "unique_pr_authors": 3,
+      "avg_cycle_time_hours": 0.0188426658230517
+    },
+    {
+      "repository": "prawn-test-staging-rw/mergequeue_service_test",
+      "unique_prs": 869,
+      "prs_opened": 822,
+      "prs_closed": 819,
+      "prs_merged": 147,
+      "unique_pr_authors": 1,
+      "avg_cycle_time_hours": 0.0173601662887377
+    },
+    {
+      "repository": "mar4uk/opentelemetry-collector-contrib",
+      "unique_prs": 758,
+      "prs_opened": 58,
+      "prs_closed": 700,
+      "prs_merged": 0,
+      "unique_pr_authors": 1,
+      "avg_cycle_time_hours": null
+    },
+    {
+      "repository": "sethAmazon/opentelemetry-collector-contrib",
+      "unique_prs": 701,
+      "prs_opened": 2,
+      "prs_closed": 699,
+      "prs_merged": 0,
+      "unique_pr_authors": 1,
+      "avg_cycle_time_hours": null
+    },
+    {
+      "repository": "google-test/signclav2-probe-repo",
+      "unique_prs": 598,
+      "prs_opened": 579,
+      "prs_closed": 545,
+      "prs_merged": 0,
+      "unique_pr_authors": 3,
+      "avg_cycle_time_hours": null
+    },
+    {
+      "repository": "prawn-test-staging-rw/mergequeue_service_test_commit_status",
+      "unique_prs": 465,
+      "prs_opened": 439,
+      "prs_closed": 445,
+      "prs_merged": 149,
+      "unique_pr_authors": 1,
+      "avg_cycle_time_hours": 0.0107829977628635
+    },
+    {
+      "repository": "NixOS/nixpkgs",
+      "unique_prs": 447,
+      "prs_opened": 337,
+      "prs_closed": 278,
+      "prs_merged": 244,
+      "unique_pr_authors": 157,
+      "avg_cycle_time_hours": 174.13987135701274
+    },
+    {
+      "repository": "actions-canary/ForkPRCanary",
+      "unique_prs": 416,
+      "prs_opened": 354,
+      "prs_closed": 362,
+      "prs_merged": 0,
+      "unique_pr_authors": 1,
+      "avg_cycle_time_hours": null
+    },
+    {
+      "repository": "microsoft/winget-pkgs",
+      "unique_prs": 371,
+      "prs_opened": 204,
+      "prs_closed": 341,
+      "prs_merged": 296,
+      "unique_pr_authors": 87,
+      "avg_cycle_time_hours": 83.86917042042043
+    }
+  ],
+  "health_indicators": [
+    {
+      "name": "Lombiq/Orchard",
+      "total_events": 51988,
+      "unique_contributors": 1,
+      "push_events": 51988,
+      "issue_events": 0,
+      "pull_request_events": 0,
+      "release_events": 0,
+      "fork_events": 0,
+      "activity_score": 10.85878743672461,
+      "contributor_score": 0.6931471805599453,
+      "collaboration_score": 0.0,
+      "release_score": 0.0
+    },
+    {
+      "name": "unifyai/ivy",
+      "total_events": 29161,
+      "unique_contributors": 87,
+      "push_events": 28748,
+      "issue_events": 158,
+      "pull_request_events": 58,
+      "release_events": 0,
+      "fork_events": 20,
+      "activity_score": 10.28062177087623,
+      "contributor_score": 4.477336814478207,
+      "collaboration_score": 5.468060141135132,
+      "release_score": 0.0
+    },
+    {
+      "name": "happyfish2024/mins",
+      "total_events": 17232,
+      "unique_contributors": 1,
+      "push_events": 17232,
+      "issue_events": 0,
+      "pull_request_events": 0,
+      "release_events": 0,
+      "fork_events": 0,
+      "activity_score": 9.754581429281576,
+      "contributor_score": 0.6931471805599453,
+      "collaboration_score": 0.0,
+      "release_score": 0.0
+    },
+    {
+      "name": "priyankjivani123/test",
+      "total_events": 14658,
+      "unique_contributors": 1,
+      "push_events": 14658,
+      "issue_events": 0,
+      "pull_request_events": 0,
+      "release_events": 0,
+      "fork_events": 0,
+      "activity_score": 9.59280976029003,
+      "contributor_score": 0.6931471805599453,
+      "collaboration_score": 0.0,
+      "release_score": 0.0
+    },
+    {
+      "name": "WolseyBankWitness/rediffusion",
+      "total_events": 13521,
+      "unique_contributors": 4,
+      "push_events": 7190,
+      "issue_events": 0,
+      "pull_request_events": 6331,
+      "release_events": 0,
+      "fork_events": 0,
+      "activity_score": 9.512073267650624,
+      "contributor_score": 1.6094379124341005,
+      "collaboration_score": 8.753371421000903,
+      "release_score": 0.0
+    },
+    {
+      "name": "B74LABgit/CAM",
+      "total_events": 12057,
+      "unique_contributors": 1,
+      "push_events": 12057,
+      "issue_events": 0,
+      "pull_request_events": 0,
+      "release_events": 0,
+      "fork_events": 0,
+      "activity_score": 9.397483619049352,
+      "contributor_score": 0.6931471805599453,
+      "collaboration_score": 0.0,
+      "release_score": 0.0
+    },
+    {
+      "name": "actiflix/assets",
+      "total_events": 11965,
+      "unique_contributors": 1,
+      "push_events": 11965,
+      "issue_events": 0,
+      "pull_request_events": 0,
+      "release_events": 0,
+      "fork_events": 0,
+      "activity_score": 9.389824573949976,
+      "contributor_score": 0.6931471805599453,
+      "collaboration_score": 0.0,
+      "release_score": 0.0
+    },
+    {
+      "name": "almahmoud/gha-build-linux-amd64",
+      "total_events": 10797,
+      "unique_contributors": 2,
+      "push_events": 10797,
+      "issue_events": 0,
+      "pull_request_events": 0,
+      "release_events": 0,
+      "fork_events": 0,
+      "activity_score": 9.287116210778231,
+      "contributor_score": 1.0986122886681096,
+      "collaboration_score": 0.0,
+      "release_score": 0.0
+    },
+    {
+      "name": "mhutchinson/mhutchinson-distributor",
+      "total_events": 10481,
+      "unique_contributors": 4,
+      "push_events": 4145,
+      "issue_events": 0,
+      "pull_request_events": 6336,
+      "release_events": 0,
+      "fork_events": 0,
+      "activity_score": 9.257414779362112,
+      "contributor_score": 1.6094379124341005,
+      "collaboration_score": 8.754160749323518,
+      "release_score": 0.0
+    },
+    {
+      "name": "splashingdiamonds/pacer-courts",
+      "total_events": 10020,
+      "unique_contributors": 1,
+      "push_events": 10020,
+      "issue_events": 0,
+      "pull_request_events": 0,
+      "release_events": 0,
+      "fork_events": 0,
+      "activity_score": 9.212438170058329,
+      "contributor_score": 0.6931471805599453,
+      "collaboration_score": 0.0,
+      "release_score": 0.0
+    }
+  ]
+}

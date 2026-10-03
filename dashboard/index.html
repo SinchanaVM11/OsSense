@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OSSense — GitHub Ecosystem Analytics</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GitHub-style icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- =====================================================
+         TOP NAVIGATION
+    ====================================================== -->
+
+    <header class="topbar">
+
+        <div class="topbar-left">
+
+            <div class="github-mark">
+                <span>◉</span>
+            </div>
+
+            <div class="brand">
+                <strong>OSSense</strong>
+                <span>/ GitHub Ecosystem Analytics</span>
+            </div>
+
+        </div>
+
+        <div class="topbar-right">
+
+            <span class="analysis-badge">
+                <span class="status-dot"></span>
+                Analysis complete
+            </span>
+
+            <span class="date-badge">
+                Feb 8–9, 2023
+            </span>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="page">
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section class="hero">
+
+            <div class="hero-grid">
+
+                <div class="hero-content">
+
+                    <div class="eyebrow">
+                        <span class="green-dot"></span>
+                        LARGE-SCALE OPEN-SOURCE ANALYTICS
+                    </div>
+
+                    <h1>
+                        Understanding
+                        <span>GitHub activity.</span>
+                    </h1>
+
+                    <p class="hero-text">
+                        OSSense processes large-scale GitHub event data
+                        to understand how developers contribute, how
+                        repositories evolve, and how code changes move
+                        through the open-source ecosystem.
+                    </p>
+
+                    <div class="hero-meta">
+
+                        <div>
+                            <span class="meta-icon">◉</span>
+                            <span>6.7M+ events</span>
+                        </div>
+
+                        <div>
+                            <span class="meta-icon">◇</span>
+                            <span>1M+ repositories</span>
+                        </div>
+
+                        <div>
+                            <span class="meta-icon">⌘</span>
+                            <span>Apache Spark</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTRIBUTION GRID -->
+
+                <div class="contribution-panel">
+
+                    <div class="contribution-header">
+                        <span>GitHub activity</span>
+                        <span>2 days</span>
+                    </div>
+
+                    <div class="contribution-grid" id="contributionGrid">
+                    </div>
+
+                    <div class="contribution-footer">
+
+                        <span>Less</span>
+
+                        <div class="legend">
+                            <i class="level-0"></i>
+                            <i class="level-1"></i>
+                            <i class="level-2"></i>
+                            <i class="level-3"></i>
+                            <i class="level-4"></i>
+                        </div>
+
+                        <span>More</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             OVERVIEW
+        ================================================== -->
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <div>
+                    <span class="section-index">01</span>
+
+                    <div>
+                        <h2>Overview</h2>
+                        <p>
+                            What happened across the analyzed GitHub data.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="stats-grid">
+
+                <article class="stat-card">
+
+                    <div class="stat-top">
+                        <span>GitHub activity</span>
+                        <span class="stat-icon">●</span>
+                    </div>
+
+                    <strong id="totalEvents">—</strong>
+
+                    <small>
+                        events analyzed
+                    </small>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-top">
+                        <span>Repositories</span>
+                        <span class="stat-icon">◫</span>
+                    </div>
+
+                    <strong id="repositories">—</strong>
+
+                    <small>
+                        projects observed
+                    </small>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-top">
+                        <span>Contributors</span>
+                        <span class="stat-icon">♙</span>
+                    </div>
+
+                    <strong id="contributors">—</strong>
+
+                    <small>
+                        human contributors
+                    </small>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-top">
+                        <span>Code updates</span>
+                        <span class="stat-icon">+</span>
+                    </div>
+
+                    <strong id="pushEvents">—</strong>
+
+                    <small>
+                        push events
+                    </small>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-top">
+                        <span>Issues</span>
+                        <span class="stat-icon">○</span>
+                    </div>
+
+                    <strong id="issueEvents">—</strong>
+
+                    <small>
+                        issue events
+                    </small>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-top">
+                        <span>Pull requests</span>
+                        <span class="stat-icon">⇄</span>
+                    </div>
+
+                    <strong id="pullRequests">—</strong>
+
+                    <small>
+                        proposed code changes
+                    </small>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             DAILY ACTIVITY
+        ================================================== -->
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <div>
+                    <span class="section-index">02</span>
+
+                    <div>
+                        <h2>Activity over time</h2>
+
+                        <p>
+                            Daily activity recorded during the analysis window.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="panel chart-panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <span class="panel-label">
+                            ACTIVITY
+                        </span>
+
+                        <h3>GitHub events per day</h3>
+                    </div>
+
+                    <div class="event-legend">
+
+                        <span>
+                            <i class="legend-green"></i>
+                            Total events
+                        </span>
+
+                        <span>
+                            <i class="legend-purple"></i>
+                            Push events
+                        </span>
+
+                        <span>
+                            <i class="legend-blue"></i>
+                            Pull requests
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="chart-container">
+                    <canvas id="dailyChart"></canvas>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             REPOSITORIES
+        ================================================== -->
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <div>
+                    <span class="section-index">03</span>
+
+                    <div>
+                        <h2>Repositories</h2>
+
+                        <p>
+                            Projects with the highest recorded activity.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <span class="panel-label">
+                            TOP PROJECTS
+                        </span>
+
+                        <h3>Most active repositories</h3>
+                    </div>
+
+                    <span class="github-label">
+                        repository
+                    </span>
+
+                </div>
+
+
+                <div class="repository-list" id="repositoryList">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CONTRIBUTORS
+        ================================================== -->
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <div>
+                    <span class="section-index">04</span>
+
+                    <div>
+                        <h2>Contributors</h2>
+
+                        <p>
+                            People generating the most activity in the dataset.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <span class="panel-label">
+                            CONTRIBUTORS
+                        </span>
+
+                        <h3>Most active contributors</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="contributor-list" id="contributorList">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ISSUES + PRS
+        ================================================== -->
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <div>
+                    <span class="section-index">05</span>
+
+                    <div>
+                        <h2>Collaboration</h2>
+
+                        <p>
+                            How problems and proposed code changes moved
+                            through repositories.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="two-column">
+
+
+                <!-- ISSUES -->
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <span class="panel-label">
+                                ISSUES
+                            </span>
+
+                            <h3>Reported problems</h3>
+                        </div>
+
+                        <span class="panel-symbol">
+                            ○
+                        </span>
+
+                    </div>
+
+
+                    <div
+                        class="issue-list"
+                        id="issueList">
+                    </div>
+
+                </div>
+
+
+                <!-- PULL REQUESTS -->
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <span class="panel-label">
+                                PULL REQUESTS
+                            </span>
+
+                            <h3>Proposed changes</h3>
+                        </div>
+
+                        <span class="panel-symbol">
+                            ⇄
+                        </span>
+
+                    </div>
+
+
+                    <div
+                        class="pr-list"
+                        id="prList">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             HEALTH INDICATORS
+        ================================================== -->
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <div>
+                    <span class="section-index">06</span>
+
+                    <div>
+                        <h2>Repository activity indicators</h2>
+
+                        <p>
+                            Transparent indicators derived from observed
+                            GitHub activity.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="panel">
+
+                <div class="indicator-grid">
+
+                    <div class="indicator-info">
+
+                        <div class="indicator-item">
+                            <span class="indicator-dot activity"></span>
+
+                            <div>
+                                <strong>Activity</strong>
+
+                                <p>
+                                    Overall volume of recorded events.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="indicator-item">
+                            <span class="indicator-dot contributors"></span>
+
+                            <div>
+                                <strong>Contributors</strong>
+
+                                <p>
+                                    Number of distinct contributors.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="indicator-item">
+                            <span class="indicator-dot collaboration"></span>
+
+                            <div>
+                                <strong>Collaboration</strong>
+
+                                <p>
+                                    Issues, pull requests and forks.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="indicator-item">
+                            <span class="indicator-dot releases"></span>
+
+                            <div>
+                                <strong>Releases</strong>
+
+                                <p>
+                                    Release activity observed.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="health-chart-container">
+
+                        <canvas id="healthChart"></canvas>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+        <section class="section about-section">
+
+            <div class="about-grid">
+
+                <div>
+
+                    <span class="section-index">
+                        07
+                    </span>
+
+                    <h2>
+                        About OSSense
+                    </h2>
+
+                </div>
+
+
+                <div class="about-content">
+
+                    <p>
+                        OSSense is a Big Data Analytics project that
+                        processes large-scale GitHub activity using
+                        Apache Spark.
+                    </p>
+
+                    <p>
+                        The analysis uses GH Archive event data and
+                        focuses on code activity, contributors,
+                        repositories, issues, pull requests, releases
+                        and forks.
+                    </p>
+
+
+                    <div class="technical-grid">
+
+                        <div>
+                            <span>DATA SOURCE</span>
+                            <strong>GH Archive</strong>
+                        </div>
+
+                        <div>
+                            <span>PROCESSING</span>
+                            <strong>Apache Spark</strong>
+                        </div>
+
+                        <div>
+                            <span>FORMAT</span>
+                            <strong>JSON → Parquet</strong>
+                        </div>
+
+                        <div>
+                            <span>ANALYSIS WINDOW</span>
+                            <strong>Feb 8–9, 2023</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+
+                <span class="footer-mark">◉</span>
+
+                <strong>OSSense</strong>
+
+                <span>
+                    Large-Scale Open-Source Ecosystem Analytics
+                </span>
+
+            </div>
+
+
+            <div class="footer-right">
+
+                Built with
+                <strong>Apache Spark</strong>
+                ·
+                Powered by GitHub event data
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="app.js"></script>
+
+</body>
+</html>
